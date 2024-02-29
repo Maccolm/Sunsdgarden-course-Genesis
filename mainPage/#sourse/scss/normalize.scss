@@ -1,0 +1,59 @@
+
+body{
+	font-family: 'Mulish';
+	font-weight: 500;
+	font-size: 18px;
+	color: #111111;
+}
+
+// Оболочка wrapper =========================================================
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	align-items: center;
+	overflow-x: hidden;
+	// Прижимаємо footer
+	> main {
+		flex: 1 1 auto;
+		width: 100%;
+	}
+	// Фікс для слайдерів
+	> *{
+		min-width: 0;
+	}
+}
+// Обмежуючий контейнер =========================================================
+[class*=__container] {
+	max-width: 1150px;
+	margin: 0 auto;
+	padding: 0 20px;
+	@media(max-width: 600px) {
+		padding: 0 10px 0 10px;
+	}
+}
+[class*="page"] {
+	min-height: 100vh;
+	@media (max-width: 768px) {
+		min-height: 100vh;
+	}
+	@media(max-height: 600px) {
+		min-height: 100vh;
+	}
+}
+
+h1{
+	font-size: 22px;
+	font-weight: 700;
+}
+h2{
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.5;
+}
+h3{
+	@extend h2;
+	line-height: 1.375;
+}
