@@ -1,7 +1,11 @@
 @import 'normalize.scss';
 @import 'nullstyle.scss';
-
+@import "_header.scss";
 //common styles======================================
 $purple: #4A4FF2;
 $gray: #979797;
 $ligthGray: #D8D8D8;
+
+.purple{
+	color: $purple;
+}
