@@ -9,3 +9,118 @@ $ligthGray: #D8D8D8;
 .purple{
 	color: $purple;
 }
+//=======================================================
+.introducing {
+	margin-bottom: 50px;
+	&__container{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		gap: 15px;
+	}
+  &__item {
+	flex: 1 1 auto;
+	display: flex;
+  }
+  &__item-big{
+	flex: 0 1 75%;
+	display: block;
+}
+&__text {
+	max-width: 635px;
+  	width: 100%;
+	  font-weight: 700;
+	  font-size: 22px;
+	  margin-bottom: 32px;
+	  color: $purple;
+	}
+	&__note {
+		font-style: italic;
+		font-size: 18px;
+		color: $gray;
+		align-self: flex-end;
+		display: block;
+		position: relative;
+		&::before{
+			content: "";
+			background-color: $gray;
+			position: absolute;
+			top: -10px;
+			left: 0;
+			height: 2px;
+			width: 15%;
+			transition: width 0.3s ease-out;
+		}
+		&:hover{
+			&::before{
+				width: 100%;
+			}
+
+		}
+	}
+}
+.text-introducing {
+	&__main {
+	  max-width: 635px;
+		 width: 100%;
+  }
+}
+//gallery=====================================================
+.main-gallery {
+	padding-top: 90px;
+	padding-bottom: 90px;
+  &__container {
+	display: flex;
+	gap: 20px;
+  }
+  &__item {
+	align-self: start;
+	height: auto;
+	margin-bottom: 20px;
+}
+&__img {
+	  height: auto;
+	}
+}
+.img-scale {
+	overflow: hidden;
+	img{
+		transition: transform 0.3s ease-out;
+		&:hover{
+		 transform: scale(1.1);
+	 }
+	}
+}
+//content======================================================
+.main-content {
+	margin-bottom: 100px;
+  &__container {}
+  &__row {
+	display: flex;
+	justify-content: space-between;
+	gap: 70px;
+  }
+  &__item {}
+  &__item-big {
+	margin-right: 70px;
+	max-width: 635px;
+	width: 100%;
+  }
+  &__label {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.35;
+  }
+}
+.item-content {
+  &__nav {}
+  &__item {
+	margin-bottom: 10px;
+	width: 150px ;
+  }
+  &__link {
+	color: $gray;
+	font-weight: 400;
+	font-size: 18px;
+  }
+}

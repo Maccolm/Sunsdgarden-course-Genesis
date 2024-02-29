@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 body {
   font-family: "Mulish";
   font-weight: 500;
@@ -140,11 +141,6 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
 /*--------------------*/
 .header {
   width: 100%;
@@ -154,13 +150,122 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 20px 90px 20px;
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: auto 0.1fr 0.1fr;
+  grid-template-columns: auto 0.05fr 0.05fr;
   gap: 2%;
 }
+
 .logo {
   font-size: 22px;
 }
 
 .purple {
   color: #4A4FF2;
+}
+
+.introducing {
+  margin-bottom: 50px;
+}
+.introducing__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.introducing__item {
+  flex: 1 1 auto;
+  display: flex;
+}
+.introducing__item-big {
+  flex: 0 1 75%;
+  display: block;
+}
+.introducing__text {
+  max-width: 635px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 32px;
+  color: #4A4FF2;
+}
+.introducing__note {
+  font-style: italic;
+  font-size: 18px;
+  color: #979797;
+  align-self: flex-end;
+  display: block;
+  position: relative;
+}
+.introducing__note::before {
+  content: "";
+  background-color: #979797;
+  position: absolute;
+  top: -10px;
+  left: 0;
+  height: 2px;
+  width: 15%;
+  transition: width 0.3s ease-out;
+}
+.introducing__note:hover::before {
+  width: 100%;
+}
+
+.text-introducing__main {
+  max-width: 635px;
+  width: 100%;
+}
+
+.main-gallery {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.main-gallery__container {
+  display: flex;
+  gap: 20px;
+}
+.main-gallery__item {
+  align-self: start;
+  height: auto;
+  margin-bottom: 20px;
+}
+.main-gallery__img {
+  height: auto;
+}
+
+.img-scale {
+  overflow: hidden;
+}
+.img-scale img {
+  transition: transform 0.3s ease-out;
+}
+.img-scale img:hover {
+  transform: scale(1.1);
+}
+
+.main-content {
+  margin-bottom: 100px;
+}
+.main-content__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+.main-content__item-big {
+  margin-right: 70px;
+  max-width: 635px;
+  width: 100%;
+}
+.main-content__label {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.item-content__item {
+  margin-bottom: 10px;
+  width: 150px;
+}
+.item-content__link {
+  color: #979797;
+  font-weight: 400;
+  font-size: 18px;
 }
