@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+body {
+  font-family: "Mulish";
+  font-weight: 500;
+  font-size: 18px;
+  color: #111111;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  overflow-x: hidden;
+}
+.wrapper > main {
+  flex: 1 1 auto;
+  width: 100%;
+}
+.wrapper > * {
+  min-width: 0;
+}
+
+[class*=__container] {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+@media (max-width: 600px) {
+  [class*=__container] {
+    padding: 0 10px 0 10px;
+  }
+}
+
+[class*=page] {
+  min-height: 100vh;
+}
+@media (max-width: 768px) {
+  [class*=page] {
+    min-height: 100vh;
+  }
+}
+@media (max-height: 600px) {
+  [class*=page] {
+    min-height: 100vh;
+  }
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h2, h3 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h3 {
+  line-height: 1.375;
+}
+
+a {
+  font-size: 18;
+  font-weight: 700;
+  color: #111111;
+  transition: color 0.3s ease-out 0s;
+}
+a:hover {
+  color: #4A4FF2;
+}
