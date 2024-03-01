@@ -158,6 +158,71 @@ img {
   font-size: 22px;
 }
 
+.footer {
+  width: 100%;
+  padding: 50px 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__nav {
+  display: flex;
+  gap: 95px;
+}
+.footer__link {
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer__list {
+  display: flex;
+  gap: 30px;
+}
+.footer__list-icons {
+  gap: 24px;
+}
+.logo {
+  font-size: 22px;
+}
+
+.icon-planet, .icon-instagram, .icon-twitter {
+  font-size: 16px;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.eot?ocab8u");
+  src: url("../fonts/icons.eot?ocab8u#iefix") format("embedded-opentype"), url("../fonts/icons.ttf?ocab8u") format("truetype"), url("../fonts/icons.woff?ocab8u") format("woff"), url("../fonts/icons.svg?ocab8u#icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-]::before, [class*=" icon-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-instagram:before {
+  content: "\e900";
+}
+
+.icon-planet:before {
+  content: "\e901";
+}
+
+.icon-twitter:before {
+  content: "\e902";
+}
+
 .purple {
   color: #4A4FF2;
 }
@@ -268,4 +333,46 @@ img {
   color: #979797;
   font-weight: 400;
   font-size: 18px;
+}
+.item-content__link:hover {
+  color: #111111;
+}
+
+.awards {
+  margin-bottom: 50px;
+}
+.awards__row {
+  padding: 48px 0 58px 0;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1.7fr 1.2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  border-top: 2px solid #D8D8D8;
+}
+.awards__row:last-child {
+  border-bottom: 2px solid #D8D8D8;
+}
+.awards__label {
+  font-size: 22px;
+  font-weight: 700;
+}
+.awards__name {
+  grid-column: 3/4;
+  font-size: 18px;
+  font-weight: 700;
+}
+.awards__subname, .awards__text {
+  grid-column: 4/5;
+  font-size: 16px;
+  font-weight: 400;
+}
+.awards__text {
+  margin-top: 12px;
+  line-height: 1.625;
+  color: #151515;
+}
+.awards__year {
+  font-size: 16px;
+  text-align: right;
+  grid-column: 5/6;
 }

@@ -1,0 +1,31 @@
+.footer {
+	width: 100%;
+	padding: 50px 0;
+	&__container{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__nav {
+		display: flex;
+		gap: 95px;
+	}
+  &__link {
+	font-size: 18px;
+	font-weight: 700;
+  }
+  &__list {
+	  display: flex;
+	  gap: 30px;
+	  &-icons{
+		gap: 24px;
+	  }
+  }
+  &__item {
+  }
+}
+.logo {
+	font-size: 22px;
+}
+.icon-planet, .icon-instagram, .icon-twitter{
+	font-size: 14px;
+}

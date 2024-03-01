@@ -1,6 +1,8 @@
 @import 'normalize.scss';
 @import 'nullstyle.scss';
 @import "_header.scss";
+@import "_footer.scss";
+@import "icon-fonts.scss";
 //common styles======================================
 $purple: #4A4FF2;
 $gray: #979797;
@@ -100,7 +102,6 @@ $ligthGray: #D8D8D8;
 	justify-content: space-between;
 	gap: 70px;
   }
-  &__item {}
   &__item-big {
 	margin-right: 70px;
 	max-width: 635px;
@@ -113,7 +114,6 @@ $ligthGray: #D8D8D8;
   }
 }
 .item-content {
-  &__nav {}
   &__item {
 	margin-bottom: 10px;
 	width: 150px ;
@@ -122,5 +122,49 @@ $ligthGray: #D8D8D8;
 	color: $gray;
 	font-weight: 400;
 	font-size: 18px;
+	&:hover{
+		color: #111111;
+	}
+  }
+}
+//awards====================================================
+.awards {
+	margin-bottom: 50px;
+  &__row {
+	padding: 48px 0 58px 0;
+	display: grid;
+	grid-template-columns: 1.4fr 1fr 1.7fr 1.2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 50px;
+	border-top: 2px solid $ligthGray;
+	&:last-child{
+		border-bottom: 2px solid $ligthGray;
+	}
+  }
+  &__label {
+	font-size: 22px;
+	font-weight: 700;
+  }
+  &__name {
+	grid-column: 3/4;
+	font-size: 18px;
+	font-weight: 700;
+  }
+  &__subname {
+	grid-column: 4/5;
+	font-size: 16px;
+	font-weight: 400;
+}
+&__text {
+	margin-top: 12px;
+	@extend .awards__subname;
+	line-height: 1.625;
+	color: #151515;
+}
+&__year {
+	font-size: 16px;
+	text-align: right;
+	grid-column: 5/6;
+
   }
 }
