@@ -3,10 +3,11 @@
 @import "_header.scss";
 @import "_footer.scss";
 @import "icon-fonts.scss";
+@import "_projects.scss";
 //common styles======================================
 $purple: #4A4FF2;
 $gray: #979797;
-$ligthGray: #D8D8D8;
+$lightGray: #D8D8D8;
 
 .purple{
 	color: $purple;
@@ -31,10 +32,10 @@ $ligthGray: #D8D8D8;
 &__text {
 	max-width: 635px;
   	width: 100%;
-	  font-weight: 700;
-	  font-size: 22px;
-	  margin-bottom: 32px;
-	  color: $purple;
+	font-weight: 700;
+	font-size: 22px;
+	margin-bottom: 32px;
+	color: $purple;
 	}
 	&__note {
 		font-style: italic;
@@ -64,7 +65,7 @@ $ligthGray: #D8D8D8;
 .text-introducing {
 	&__main {
 	  max-width: 635px;
-		 width: 100%;
+		width: 100%;
   }
 }
 //gallery=====================================================
@@ -136,9 +137,9 @@ $ligthGray: #D8D8D8;
 	grid-template-columns: 1.4fr 1fr 1.7fr 1.2fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 50px;
-	border-top: 2px solid $ligthGray;
+	border-top: 2px solid $lightGray;
 	&:last-child{
-		border-bottom: 2px solid $ligthGray;
+		border-bottom: 2px solid $lightGray;
 	}
   }
   &__label {
