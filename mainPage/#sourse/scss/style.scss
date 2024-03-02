@@ -4,6 +4,7 @@
 @import "_footer.scss";
 @import "icon-fonts.scss";
 @import "_projects.scss";
+@import "_contact.scss";
 //common styles======================================
 $purple: #4A4FF2;
 $gray: #979797;
@@ -166,6 +167,5 @@ $lightGray: #D8D8D8;
 	font-size: 16px;
 	text-align: right;
 	grid-column: 5/6;
-
   }
 }
